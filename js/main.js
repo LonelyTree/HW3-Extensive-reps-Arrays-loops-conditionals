@@ -146,3 +146,12 @@ console.log(KristynCafeFit);
 
 console.log(thomsCloset);
 console.log(kristynsCloset);
+
+
+for(let i= 0; i < kristynsCloset.length; i++){
+    console.log("WHIRR: Now washing " + kristynsCloset[i] + "!");
+}
+
+for(let i=0; i < thomsCloset.length; i++){
+    console.log(i);
+}
