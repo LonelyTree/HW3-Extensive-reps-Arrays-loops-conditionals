@@ -64,7 +64,7 @@ for(let i=1; i <= 100; i++){
     };
 };
 
-/////////////////////////////////////////////////////*/
+
 
 const kenny = ["Kenny", 1000, "Austin"];
 const jimHaff = ["Jim H", 16, "All cities"];
@@ -82,3 +82,21 @@ jimHaff.splice(2,1,"Chicago","Los Angeles","New York");
 jimHaff.splice(2,1);
 
 console.log(jimHaff);
+/////////////////////////////////////////////////////*/
+
+
+const theNinjaTees = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for(let i=0; i < theNinjaTees.length; i++){
+    let NINYTEE = [];
+    for(let e = 0; e < theNinjaTees[i].length; e++)
+    if([e] % 2 === 0 || [e] === 0){
+    NINYTEE.push(theNinjaTees[i][e].toUpperCase())
+    }
+    else {
+    NINYTEE.push(theNinjaTees[i][e]);
+    };
+    var greenShell = NINYTEE.join("");
+
+    console.log(greenShell);   
+}
