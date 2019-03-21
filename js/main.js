@@ -82,7 +82,7 @@ jimHaff.splice(2,1,"Chicago","Los Angeles","New York");
 jimHaff.splice(2,1);
 
 console.log(jimHaff);
-/////////////////////////////////////////////////////*/
+
 
 
 const theNinjaTees = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
@@ -100,3 +100,49 @@ for(let i=0; i < theNinjaTees.length; i++){
 
     console.log(greenShell);   
 }
+/////////////////////////////////////////////////////*/
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+var kristynsShoe = kristynsCloset[0];
+thomsCloset[2].push(kristynsShoe);
+
+kristynsCloset.shift();
+
+const ThomFABoutfit = ("Thom is headed to his friends party! He decides to wear a " + thomsCloset[0][1] + ", a pair of " + thomsCloset[1][1] + ", and his favorite " + thomsCloset[2][2] + ".");
+console.log(ThomFABoutfit);
+
+const KristynCafeFit = ("Kristyn is heading to the cafe, she picks a pair of " + kristynsCloset[0] + ", a "  + kristynsCloset[2] + ", and her " + kristynsCloset[4] +".");
+console.log(KristynCafeFit);
+
+console.log(thomsCloset);
+console.log(kristynsCloset);
