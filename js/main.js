@@ -100,7 +100,7 @@ for(let i=0; i < theNinjaTees.length; i++){
 
     console.log(greenShell);   
 }
-/////////////////////////////////////////////////////*/
+
 
 const kristynsCloset = [
     "left shoe",
@@ -155,3 +155,31 @@ for(let i= 0; i < kristynsCloset.length; i++){
 for(let i=0; i < thomsCloset.length; i++){
     console.log(i);
 }
+
+/////////////////////////////////////////////////////*/
+
+function eulerSum(x) {
+    let eulerTotal = 0;
+    while(x < 1000){
+        if(x % 3 === 0 || x % 5 === 0){
+        eulerTotal = eulerTotal + x
+        }
+        x++;
+    }
+    return eulerTotal;
+    }
+    console.log(eulerSum(500));
+
+
+    
+// function sum(num) {
+//    let total = 0
+//    let i = 1
+//        while (i < num) {
+//            if (i % 3 === 0 || i % 5 === 0) {
+//                total = total + i;
+//            }
+//            i++;
+//        }
+//    return total
+// }
